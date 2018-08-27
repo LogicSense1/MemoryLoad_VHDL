@@ -1,0 +1,31 @@
+# Compile of alu.vhd failed with 4 errors.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of dmem_tb.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 6 compiles, 1 failed with 4 errors.
+# Compile of alu.vhd was successful.
+# Compile of common.vhd was successful.
+# Compile of dmem.vhd was successful.
+# Compile of dmem_tb.vhd was successful.
+# Compile of imem.vhd was successful.
+# Compile of regfile.vhd was successful.
+# 6 compiles, 0 failed with no errors.
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=\"+acc\" work.dmem_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L rtl_work -L work -voptargs=""+acc"" work.dmem_tb 
+# Start time: 20:42:59 on Aug 27,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.common(body)
+# Loading work.dmem_tb(behavioral)
+# Loading work.dmem(memory)
+add wave -position insertpoint sim:/dmem_tb/*
+run -all
+# ** Failure: success - end of simulation
+#    Time: 1300 ns  Iteration: 1  Process: /dmem_tb/proc_set File: C:/Users/xiawe/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB4/src/dmem_tb.vhd
+# Break in Process proc_set at C:/Users/xiawe/OneDrive - The University of Sydney (Students)/ELEC3608 Computer Architecture/LAB4/src/dmem_tb.vhd line 75
+# End time: 20:46:23 on Aug 27,2018, Elapsed time: 0:03:24
+# Errors: 1, Warnings: 0

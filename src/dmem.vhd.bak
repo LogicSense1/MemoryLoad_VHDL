@@ -1,0 +1,15 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+use work.common.all;
+
+entity dmem is
+    port (reset : in  std_logic;
+          clk   : in  std_logic;
+          raddr : in  std_logic_vector(5 downto 0);
+          dout  : out word;
+          waddr : in  std_logic_vector(5 downto 0);
+          din : in  word;
+          we    : in  std_logic);
+end entity dmem;
